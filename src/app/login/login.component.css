@@ -1,0 +1,69 @@
+.login-block {
+  float: left;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.container {
+  background: #d3d3d3;
+  border-radius: 10px;
+  width: 40%;
+  height: 40%;
+}
+.login-sec {
+  padding: 50px 30px;
+  position: relative;
+}
+.login-sec h2 {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 30px;
+  color: #0069c0;
+}
+.login-sec h2:after {
+  content: " ";
+  width: 100px;
+  height: 5px;
+  background: #6ec6ff;
+  display: block;
+  margin-top: 20px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-login {
+  background: #0069c0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.login-icon{
+  padding-left: 775px;
+  padding-right: 775px;
+  padding-top: 75px;
+}
+
+.login-anim {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 12%;
+  margin-top: 100px;
+}
+
+.monkey-img {
+  position: relative;
+  top: 20px;
+  left: 0;
+}
+
+.hand-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 175px;
+  visibility: hidden;
+}
+
