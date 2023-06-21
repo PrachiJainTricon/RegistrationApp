@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <city>surat</city>
+        <id>1</id>
+        <mobileNumber>7017654168</mobileNumber>
+        <name>Prachi</name>
+    </user> 
+    <user>
+        <city>New Delhi</city>
+        <id>2</id>
+        <mobileNumber>7676574839</mobileNumber>
+        <name>Harish</name>
+    </user>
+    <user>
+        <city>Banglore</city>
+        <id>3</id>
+        <mobileNumber>7692748765</mobileNumber>
+        <name>Kathiravan</name>
+    </user>
+    <user>
+        <city>Lucknow</city>
+        <id>4</id>
+        <mobileNumber>7678349265</mobileNumber>
+        <name>ram</name>
+    </user>
+</users>
