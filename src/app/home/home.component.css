@@ -1,0 +1,12 @@
+.container {
+  background: #d3d3d3;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+}
+
+.btn-danger {
+  background: #0069c0;
+  color: #fff;
+  font-weight: 600;
+}

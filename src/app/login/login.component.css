@@ -1,7 +1,19 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 .login-block {
-  float: left;
+  /* float: left;
   width: 100%;
-  padding: 100px 0;
+  padding: 20px 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .container {
@@ -9,13 +21,14 @@
   border-radius: 10px;
   width: 40%;
   height: 40%;
+  overflow: auto;
 }
 .login-sec {
   padding: 50px 30px;
   position: relative;
 }
 .login-sec h2 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 800;
   font-size: 30px;
   color: #0069c0;
@@ -26,7 +39,7 @@
   height: 5px;
   background: #6ec6ff;
   display: block;
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 3px;
   margin-left: auto;
   margin-right: auto;
@@ -37,10 +50,12 @@
   font-weight: 600;
 }
 
-.login-icon{
+.login-icon {
   padding-left: 775px;
   padding-right: 775px;
   padding-top: 75px;
+  /* text-align: center;
+  margin-bottom: 75px; */
 }
 
 .login-anim {
@@ -48,14 +63,21 @@
   top: 0;
   left: 0;
   margin: auto;
-  width: 12%;
-  margin-top: 100px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  /* width: 50%;
+  margin: 100px auto; */
 }
 
 .monkey-img {
   position: relative;
   top: 20px;
   left: 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;  */
 }
 
 .hand-img {
@@ -66,4 +88,3 @@
   width: 175px;
   visibility: hidden;
 }
-
