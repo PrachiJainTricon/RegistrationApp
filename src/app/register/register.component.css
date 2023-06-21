@@ -72,8 +72,8 @@ body {
 .hand-img {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50;
   height: 200px;
-  width: 175px;
+  width: 40%;
   visibility: hidden;
 }
