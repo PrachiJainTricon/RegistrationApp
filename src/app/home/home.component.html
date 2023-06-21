@@ -1,6 +1,39 @@
 <app-navbar></app-navbar>
 <div class="container">
-    <div class="text-center mt-5">
-      <h3>Home page</h3>
+  <div class="text-center mt-5">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h2>Employee List</h2>
+      </div>
+      <div class="panel-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Employee Id</th>
+              <th>Name</th>
+              <th>City</th>
+              <th>Mobile Number</th>
+              <th>Generate Report</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of users">
+              <td>{{ user.id }}</td>
+              <td>{{ user.name }}</td>
+              <td>{{ user.city }}</td>
+              <td>{{ user.mobileNumber }}</td>
+              <td>
+                <button
+                  (click)="generateReport(user.id)"
+                  class="btn btn-danger"
+                >
+                  Report
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+  </div>
 </div>

@@ -9,28 +9,32 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-
-const routes:Routes =[
+const routes: Routes = [
   {
-    path:"",
-    component:HomeComponent
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full',
   },
   {
-    path:'login',
-    component:LoginComponent
+    path: 'home',
+    component: HomeComponent,
   },
   {
-    path:'register',
-    component:RegisterComponent
+    path: 'login',
+    component: LoginComponent,
   },
   {
-    path:'dashboard',
-    component:DashboardComponent
-  }
-
-]
+    path: 'register',
+    component: RegisterComponent,
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+  },
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,9 +48,10 @@ const routes:Routes =[
     BrowserModule,
     RouterModule.forRoot(routes),
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
