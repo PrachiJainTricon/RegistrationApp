@@ -11,6 +11,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AuthService } from './_service/auth.service';
+
 
 const routes: Routes = [
   {
@@ -21,6 +23,7 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+    canActivate: [AuthService]
   },
   {
     path: 'login',
@@ -33,6 +36,7 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
+    canActivate: [AuthService]
   },
 ];
 @NgModule({
@@ -43,6 +47,7 @@ const routes: Routes = [
     RegisterComponent,
     LoginComponent,
     DashboardComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -51,7 +56,7 @@ const routes: Routes = [
     HttpClientModule,
     NgbModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,6 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
+// import { Router } from '@angular/router';
+
+import {
+  CanActivate,
+  ActivatedRouteSnapshot,
+  RouterStateSnapshot,
+  UrlTree,
+  Router,
+} from '@angular/router';
 
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -8,22 +16,33 @@ import { map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root',
 })
-export class AuthService {
+export class AuthService implements CanActivate {
   private xmlDataUrl = 'assets/User.xml';
 
   constructor(private router: Router, private http: HttpClient) {}
 
-  isAunthenticated(): Boolean {
+  canActivate(
+    next: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ): boolean {
+    return this.canAcess();
+  }
+
+  isAunthenticated(): boolean {
     if (sessionStorage.getItem('token') !== null) {
       return true;
     }
     return false;
   }
 
-  canAcess() {
-    if (!this.isAunthenticated()) {
+  canAcess(): boolean {
+    const isLoggedIn = this.isAunthenticated();
+
+    if (!isLoggedIn) {
       this.router.navigate(['/login']);
     }
+
+    return isLoggedIn;
   }
 
   canAuthenticate(process: string, response?: string) {
