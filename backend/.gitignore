@@ -5,6 +5,15 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+# Ignore Gradle GUI config
+gradle-app.setting
+
+
+# Cache of project
+.gradletasknamecache
+
+
+
 ### STS ###
 .apt_generated
 .classpath
@@ -35,3 +44,10 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Package Files #
+*.jar
+*.war
+
+### Java ###
+*.class
