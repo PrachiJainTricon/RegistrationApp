@@ -99,7 +99,7 @@ public class UserControllerIntegrationTest {
                         .content(requestBody))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$.message").value("User not"))
+                .andExpect(jsonPath("$.message").value("User not Found"))
                 .andExpect(jsonPath("$.status").value(false))
                 .andExpect(jsonPath("$.authenticate").value("notauthenticated"));
 
