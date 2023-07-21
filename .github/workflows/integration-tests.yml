@@ -22,8 +22,10 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
-        
-      - name: Build with Gradle
+        with:
+          gradle-version: 7.6.1
+
+      - name: Run build with Gradle Wrapper
         run: ./gradlew build
 
 
