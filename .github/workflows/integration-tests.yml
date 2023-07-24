@@ -22,6 +22,11 @@ jobs:
       - name: Grant execute permission to gradlew
         run: chmod +x backend/gradlew
 
+      - name: Set up MySQL service
+        uses: mysql-actions/mysql-start@v2
+        with:
+          mysql-version: '5.7'
+
       - name: Run build with Gradle Wrapper
         env:
           DB_USERNAME: ${{ secrets.DB_USERNAME }}
