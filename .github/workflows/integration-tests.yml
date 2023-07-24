@@ -25,8 +25,7 @@ jobs:
 
       - name: Run build with Gradle Wrapper
         working-directory: backend
-        run: gradlew build
-
+        run: ./gradlew build
 
       - name: Run Integration Tests
         working-directory: backend
