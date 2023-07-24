@@ -24,7 +24,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
 
       - name: Run build with Gradle Wrapper
-        run: gradle clean build
+        run: gradlew build
 
 
       - name: Run Integration Tests
