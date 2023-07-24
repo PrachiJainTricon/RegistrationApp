@@ -23,9 +23,15 @@ jobs:
         run: chmod +x backend/gradlew
 
       - name: Run build with Gradle Wrapper
+        env:
+          DB_USERNAME: ${{ secrets.DB_USERNAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         working-directory: backend
         run: ./gradlew build
 
       - name: Run Integration Tests
+        env: # Set environment variables
+          DB_USERNAME: ${{ secrets.DB_USERNAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         working-directory: backend
         run: ./gradlew test --info
