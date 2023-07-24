@@ -24,8 +24,10 @@ jobs:
         uses: gradle/gradle-build-action@v2
 
       - name: Run build with Gradle Wrapper
+        working-directory: backend
         run: gradlew build
 
 
       - name: Run Integration Tests
+        working-directory: backend
         run: ./gradlew test --info
