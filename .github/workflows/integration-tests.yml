@@ -19,18 +19,13 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
 
-      - name: Install Gradle
-        uses: gradle/wrapper-action@v1
-        with:
-          gradle-version: 7.5.1
-
       - name: Grant execute permission to gradlew
         run: chmod +x backend/gradlew
 
-      - name: Build with Gradle
+      - name: Run build with Gradle Wrapper
         working-directory: backend
         run: ./gradlew build
 
       - name: Run Integration Tests
         working-directory: backend
-        run: ./gradlew test 
+        run: ./gradlew test --info
