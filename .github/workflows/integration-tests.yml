@@ -33,4 +33,4 @@ jobs:
 
       - name: Run Integration Tests
         working-directory: backend
-        run: ./gradlew test --info
+        run: ./gradlew test 
