@@ -32,6 +32,7 @@ dependencies {
 //	implementation group: 'mysql', name: 'mysql-connector-java', version: '3.0.10'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.security:spring-security-test'
 	testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
 }
