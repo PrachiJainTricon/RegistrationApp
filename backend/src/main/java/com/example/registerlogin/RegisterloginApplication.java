@@ -9,6 +9,7 @@ public class RegisterloginApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RegisterloginApplication.class, args);
+		System.out.println("helo enknd");
 	}
 
 }
