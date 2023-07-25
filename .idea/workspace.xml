@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d3cead3f-29a2-4aff-884f-8c60155335aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/registerlogin/RegisterloginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/registerlogin/RegisterloginApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application-test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/example/registerlogin/RegisterloginApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/example/registerlogin/RegisterloginApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/example/registerlogin/testUserController/UserControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/example/registerlogin/testUserController/UserControllerIntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,8 +96,12 @@
   </component>
   <component name="RunManager" selected="Application.RegisterloginApplication">
     <configuration name="RegisterloginApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="-DDB_NAME" value="root -DDB_PASSWORD =123456789" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.example.registerlogin.RegisterloginApplication" />
       <module name="registerlogin.main" />
+      <option name="PROGRAM_PARAMETERS" value="-DDB_NAME=root -DDB_PASSWORD =123456789" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.registerlogin.*" />
@@ -206,6 +204,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.RegisterloginApplication" />
+      <item itemvalue="Gradle.RegisterloginApplicationTests" />
+      <item itemvalue="Gradle.UserControllerIntegrationTest" />
+      <item itemvalue="Gradle.UserControllerIntegrationTest.testLoginUser_UserFoundButPasswordDoesNotMatch" />
+      <item itemvalue="Gradle.UserControllerIntegrationTest.testLoginUser_userNotFound" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.RegisterloginApplication" />
