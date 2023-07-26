@@ -4,13 +4,11 @@ import com.example.registerlogin.dto.LoginDTO;
 import com.example.registerlogin.dto.UserDTO;
 import com.example.registerlogin.entity.User;
 import com.example.registerlogin.repo.UserRepo;
-import com.example.registerlogin.service.UserService;
 import com.example.registerlogin.response.LoginResponse;
+import com.example.registerlogin.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 public class UserIMPL implements UserService {
@@ -20,6 +18,12 @@ public class UserIMPL implements UserService {
     private UserRepo userRepo;
     @Autowired
     private PasswordEncoder passwordEncoder;
+
+    /**
+     *
+     * @param userDTO
+     * @return
+     */
     @Override
     public User addUser(UserDTO userDTO) {
 
@@ -61,6 +65,11 @@ public class UserIMPL implements UserService {
 //
 //    }
 
+    /**
+     *
+     * @param loginDTO
+     * @return
+     */
     @Override
     public LoginResponse loginUser(LoginDTO loginDTO) {
         String msg = "";

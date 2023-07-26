@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3cead3f-29a2-4aff-884f-8c60155335aa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/integration-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/integration-tests.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/registerlogin/RegisterloginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/registerlogin/RegisterloginApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/registerlogin/serviceImpl/UserIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/registerlogin/serviceImpl/UserIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/example/registerlogin/testUserController/UserControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/example/registerlogin/testUserController/UserControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +23,9 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -80,7 +91,7 @@
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -96,12 +107,8 @@
   </component>
   <component name="RunManager" selected="Application.RegisterloginApplication">
     <configuration name="RegisterloginApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="-DDB_NAME" value="root -DDB_PASSWORD =123456789" />
-      </envs>
       <option name="MAIN_CLASS_NAME" value="com.example.registerlogin.RegisterloginApplication" />
       <module name="registerlogin.main" />
-      <option name="PROGRAM_PARAMETERS" value="-DDB_NAME=root -DDB_PASSWORD =123456789" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.registerlogin.*" />
@@ -112,35 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterloginApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.registerlogin.RegisterloginApplicationTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="UserControllerIntegrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="--info" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -158,7 +142,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserControllerIntegrationTest.testLoginUser_UserFoundButPasswordDoesNotMatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserControllerIntegrationTest.testSaveUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
@@ -171,7 +155,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.registerlogin.testUserController.UserControllerIntegrationTest.testLoginUser_UserFoundButPasswordDoesNotMatch&quot;" />
+            <option value="&quot;com.example.registerlogin.testUserController.UserControllerIntegrationTest.testSaveUser&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -181,43 +165,62 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserControllerIntegrationTest.testLoginUser_userNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="backend [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.registerlogin.testUserController.UserControllerIntegrationTest.testLoginUser_userNotFound&quot;" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="backend [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.RegisterloginApplication" />
-      <item itemvalue="Gradle.RegisterloginApplicationTests" />
+      <item itemvalue="Gradle.backend [build]" />
+      <item itemvalue="Gradle.backend [clean]" />
+      <item itemvalue="Gradle.UserControllerIntegrationTest.testSaveUser" />
       <item itemvalue="Gradle.UserControllerIntegrationTest" />
-      <item itemvalue="Gradle.UserControllerIntegrationTest.testLoginUser_UserFoundButPasswordDoesNotMatch" />
-      <item itemvalue="Gradle.UserControllerIntegrationTest.testLoginUser_userNotFound" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RegisterloginApplication" />
         <item itemvalue="Gradle.UserControllerIntegrationTest" />
-        <item itemvalue="Gradle.RegisterloginApplicationTests" />
-        <item itemvalue="Gradle.UserControllerIntegrationTest.testLoginUser_UserFoundButPasswordDoesNotMatch" />
-        <item itemvalue="Gradle.UserControllerIntegrationTest.testLoginUser_userNotFound" />
+        <item itemvalue="Gradle.UserControllerIntegrationTest.testSaveUser" />
+        <item itemvalue="Gradle.backend [build]" />
+        <item itemvalue="Gradle.backend [clean]" />
+        <item itemvalue="Application.RegisterloginApplication" />
       </list>
     </recent_temporary>
   </component>

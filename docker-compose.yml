@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: "dbuser"
+      MYSQL_USER: "root"
+      MYSQL_PASSWORD: "123456789"
+      MYSQL_ROOT_PASSWORD: "123456789"
+    ports:
+      - "3306:3306"
